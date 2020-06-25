@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DS - Contacto</title>
+    <meta name="description" content="Trabajo Final - Diseño de Sitios Web">
+    <meta name="author" content="Angello Hoyos, Gabriel Iriarte, Victor Cetre">
+    <!-- Stylesheet CSS & Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--icon-->
+    <link rel="icon" href="assets/favicon/favicon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">DS <span>- Desarrollo y Seguridad</span></h1>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home site-nav--icon"></i>Inicio</a></li>
+                <li><a href="nuestra.html"><i class="fa fa-info site-nav--icon"></i>Nuestra Empresa</a></li>
+                <li><a href="servicios.html"><i class="fa fa-server site-nav--icon"></i>Servicios</a></li>
+                <li><a href="contacto.html" class="active"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+    </header>
+    <div class="container">
+        <form action="enviar.php" method="post">
+            <h2>Contacte con nosotros</h2>
+            <p class="intro">Agradecemos el interés por contactarse con nosotros, si desea recibir mayor información
+                sobre alguno de nuestros servicios, por favor rellene el siguiente formulario y enseguida
+                estaremos respondiendo.</p>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <label for="first_name">Nombre</label> <INPUT type="text" size=36 name="first_name"></INPUT>
+                    <label for="last_name">Apellido</label> <INPUT type="text" size=36 name="last_name"></INPUT>
+                    <label for="email">E-mail</label> <INPUT type="email" size=36 name="email"></INPUT>
+                    <label for="telephone">Teléfono</label> <INPUT type="tel" size=36 name="telephone"></INPUT>
+                    <label for="message">Mensaje</label> <TEXTAREA rows=5 cols=30 name="message"></TEXTAREA>
+                    <br>
+                    <INPUT id="submit" type="submit" value="Enviar">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 row">
+                    <br>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.0545544679935!2d-74.76200048572235!3d9.23941908820298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5ec7c0f95dc3bd%3A0x761b232592529af5!2sUniversidad%20de%20Cartagena%20CREAD%20Magangu%C3%A9!5e0!3m2!1ses-419!2sco!4v1592707257374!5m2!1ses-419!2sco"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+
+        </form>
+        <br>
+        <br>
+
+    </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

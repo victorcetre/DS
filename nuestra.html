@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DS - Nuestra Empresa</title>
+    <meta name="description" content="Trabajo Final - Diseño de Sitios Web">
+    <meta name="author" content="Angello Hoyos, Gabriel Iriarte, Victor Cetre">
+    <!-- Stylesheet CSS & Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--icon-->
+    <link rel="icon" href="assets/favicon/favicon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">DS <span>- Desarrollo y Seguridad</span></h1>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home site-nav--icon"></i>Inicio</a></li>
+                <li><a href="nuestra.html" class="active"><i class="fa fa-info site-nav--icon"></i>Nuestra Empresa</a>
+                </li>
+                <li><a href="servicios.html"><i class="fa fa-server site-nav--icon"></i>Servicios</a></li>
+                <li><a href="contacto.html"><i class="fa fa-envelope site-nav--icon"></i>Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+    </header>
+    <section class="contenedor main-p">
+        <div id="title">
+            <h2 class="titulo">Nuestra Empresa</h2>
+        </div>
+        <div class="contenedor-main">
+            <img src="assets/img/nuestra.svg" alt="" class="imagen-about-us">
+            <div class="contenido-textos">
+                <h3>Mision</h3>
+                <p>Nuestra misión como empresa de diseño web y seguridad web es ofrecer soluciones de negocios
+                    que impulsen al empresario colombiano en su incursión al mundo del internet, a través de un
+                    servicio de alta calidad, tecnología confiable, con diseño de vanguardia y un equipo de
+                    trabajo con espíritu de servicio.</p>
+                <h3>Vision</h3>
+                <p>Tenemos proyectado ser la mejor alternativa en desarrollo y seguridad web para el empresario
+                    colombiano que busca explotar las oportunidades que internet le ofrece para impulsar su negocio,
+                    en donde nuestra calidad se refleje en una excelente relación con nuestros clientes, y donde
+                    nuestra prosperidad se comparta entre nuestros empleados y proveedores.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5">
+        <div class="container">
+            <div class="copyright text-center">
+                <p>© 2020. All Rights Reserved - Desarrollo y Seguridad web</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
